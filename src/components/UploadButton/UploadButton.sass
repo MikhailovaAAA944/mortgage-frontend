@@ -1,0 +1,35 @@
+@import "src/Styles/variables.sass"
+
+.input-file
+	position: relative
+	transition: all 0.2s ease
+	cursor: pointer
+
+	&:hover
+		transform: scale(1.05)
+
+	input[type=file]
+		display: none
+
+	.input-file-btn
+		position: relative
+		font-size: 16px
+		padding: 10px 15px
+		text-align: center
+		text-decoration: none
+		color: #ffffff
+		border-radius: 15px
+		border: none
+		cursor: pointer
+		outline: none
+		transition: 0.3s
+		background: $primary
+
+		&:hover
+			transform: scale(1.05)
+
+		&:active
+			transform: scale(0.96)
+
+	.input-file input[type=file]:focus + .input-file-btn
+		box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25)
